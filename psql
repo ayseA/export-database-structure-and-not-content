@@ -1,0 +1,29 @@
+-------------------------------------------------------------------
+-- run the commands here in your operating system's CLI
+--    you'll be prompted for your password for authentication to run them.
+--    enter your password whenever asked
+-- see https://aysea.github.io/export-database-structure-and-not-content for detail instructions.
+--    note and make use of the similarities between PostgreSQL and MySQL in carrying out these operations. 
+-------------------------------------------------------------------
+
+-- copy the structure of database `my_own_db` to a disk location. 
+--    will prompt for your password. 
+-- 		if you remove the '-s' switch, also copies the data content. 
+--      so make sure of this switch to avoid your data be copied
+pg_dump -U yourDBuserName -s my_own_db > file2consultant.sql
+
+
+-- Alternatively - to export on pgAdmin - 
+--    r-click on your database > Backup.. 
+--    on the window that opens, do the following
+--  	  General tab -  enter `file2consultant.sql` for the file name
+-- 	                   for Format, select `Plain` (default is `Custom`)
+--      Dump options tab - switch 'Only schema' option to "Yes"  -- this'll disallow the data be exported as well
+
+-------------------------------------------------------------------
+
+-- verify `file2consultant.sql` by importing it into a database, `structure_copy_db`
+psql -U yourDBuserName structure_copy_db < file2consultant.sql
+
+-- to create the database `structure_copy_db` for the above command, run the following, still in the OS shell
+createdb -U yourDBuserName structure_copy_db
