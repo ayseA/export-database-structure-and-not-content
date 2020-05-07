@@ -20,7 +20,7 @@ Before proceeding with the instructions, note the following names for ease of co
 
 * _**`yourDBuserName`**_: the username you use for accessing your database.
 
-# MySQL commands
+## MySQL commands
 
 In this article, we take MySQL as the case/example and show the commands for MySQL only.
 
@@ -46,7 +46,7 @@ If you get an error message saying that the command isn’t recognized, it means
    ```
      
 
-## Create _`file2consultant.sql`_:
+### Create _`file2consultant.sql`_
 
 To copy the structure of your database to a disk location, run the following on your OS/CLI:
     
@@ -61,7 +61,7 @@ It now created a file _`file2consultant.sql`_ in the directory that you ran it. 
 > In the panel that opens, see the drop-down menu that shows 
 > “Dump Structure and Data” as default, and change it to “Dump Structure.”
 
-## Verify _`file2consultant.sql`_:
+### Verify _`file2consultant.sql`_
 
 
 Once you successfully ran the above command, a structure-copy of _`my_own_db`_ is generated into file _`file2consultant.sql`_.
