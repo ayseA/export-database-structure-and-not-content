@@ -42,7 +42,7 @@ If you get an error message saying that the command isn’t recognized, it means
      instead of 
  
    ``` 
-   mysqldump” -u yourDBuserName -p -d my_own_db > file2consultant.sql
+   mysqldump -u yourDBuserName -p -d my_own_db > file2consultant.sql
    ```
      
 
@@ -51,7 +51,7 @@ If you get an error message saying that the command isn’t recognized, it means
 To copy the structure of your database to a disk location, run the following on your OS/CLI:
     
    ``` 
-   mysqldump” -u yourDBuserName -p -d my_own_db > file2consultant.sql
+   mysqldump -u yourDBuserName -p -d my_own_db > file2consultant.sql
    ```
      
 It now created a file _`file2consultant.sql`_ in the directory that you ran it. This file is ready as you wanted, i.e. contains all structure and no data of _`my_own_db`_. You now can send _`file2consultant.sql`_ as is to your consultant. In this command, the `'-d'` switch is the one that makes sure your data isn’t copied during the process. So, make sure to include this switch unless you’re looking for a full copy.
