@@ -91,4 +91,4 @@ In this article, we covered how to export a MySQL database into an external, ind
 
   
 
-The instructions shown here work for MySQL only. However, all relational database systems have features to structure-copy a database just as we’ve done here. 	Keep an eye on [this](https://github.com/ayseA/export-database-structure-and-not-content) repository which currently contains the corresponding commands for  [MS SQL Server](https://github.com/ayseA/export-database-structure-and-not-content/blob/master/SQL-Server) and [PostgreSQL]https://github.com/ayseA/export-database-structure-and-not-content/blob/master/psql) also.
+The instructions shown here work for MySQL only. However, all relational database systems have features to structure-copy a database just as we’ve done here. 	Keep an eye on [this](https://github.com/ayseA/export-database-structure-and-not-content) repository which currently contains the corresponding commands for  [MS SQL Server](https://github.com/ayseA/export-database-structure-and-not-content/blob/master/SQL-Server) and [PostgreSQL] (https://github.com/ayseA/export-database-structure-and-not-content/blob/master/psql) also.
