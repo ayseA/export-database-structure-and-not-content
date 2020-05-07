@@ -69,16 +69,16 @@ Once you successfully ran the above command, a structure-copy of _`my_own_db`_ i
 You still may want to make sure that _`file2consultant.sql`_ is what you want. The best way to do that is to import it to an empty database, just as your consultant will do. First, make sure that there exists and empty database to import it into. So, create _`structure_copy_db`_ if you haven’t already – you can do so by running the following in your OS command line:
 
 ```
-mysql -u _yourDBuserName_ -p -e "CREATE DATABASE structure_copy_db"
+mysql -u yourDBuserName -p -e "CREATE DATABASE structure_copy_db"
 ```
 Now you are ready to import to a database on your MySQL engine:
 ```
-mysql -u _yourDBuserName_ -p _structure___c__opy___db_ < _file2consultant.sql_
+mysql -u yourDBuserName -p structure_copy_db < file2consultant.sql
 ```
 
 
 
-All done now. Just go into _structure___c__opy___db_ and see what is/not in it. What you see in it is what _file2consultant.sql_ contains, nothing more and nothing less.
+All done now. Just go into _`structure_copy_db`_ and see what is/not in it. What you see in it is what _`file2consultant.sql`_ contains, nothing more and nothing less.
 
   
   
