@@ -1,0 +1,26 @@
+  
+-------------------------------------------------------------------
+-- run the commands here in any SQL Server query interface, typically of SSMS 
+-- see https://aysea.github.io/export-database-structure-and-not-content for details
+-------------------------------------------------------------------
+
+-- copy the structure of database `my_own_db` to `structure_copy_db`, which is another database. 
+--      don't create `structure_copy_db` yourself - the following command will create it as part of its work. 
+--      in fact, if there already is a database `structure_copy_db`, it'll give an error and won't successfully execute 
+
+DBCC CLONEDATABASE ( my_own_db,  structure_copy_db )
+    WITH NO_STATISTICS, NO_QUERYSTORE;
+
+-- in the above command, if you don't include NO_QUERYSTORE option, it'll also copy your query history. 
+--    so, if you don't want the queries you've made copied&seen, 
+--    also include NO_QUERYSTORE switch in the WITH clause. i.e., use the above command as is
+
+-- the database `structure_copy_db` is your verification of what'll be included in 
+--      `file2consultant.sql` you're about to create now. 
+--      check to see it contains what you expect, 
+--      i.e. only the structure but **not** the data of my_own_db
+
+-- you are now ready to export `structure_copy_db` to a disk file. 
+--      once you run the following command sccessfully, you'll have generated a 
+--      structure-only copy of `my_own_db`.
+BACKUP DATABASE structure_copy_db TO DISK = 'file2consultant.sql';
