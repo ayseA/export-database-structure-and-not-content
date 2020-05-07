@@ -1,0 +1,19 @@
+-------------------------------------------------------------------
+-- run the commands here in your operating system's CLI
+--    you'll be prompted for your password for authentication to run them.
+--    enter your password when asked
+-- see https://aysea.github.io/export-database-structure-and-not-content for detail instructions.
+-------------------------------------------------------------------
+
+-- copy the structure of database `my_own_db` to a disk location. 
+--    will prompt for your passwd. 
+-- 		if you remove the '-d' switch, also copies the data
+mysqldump -u yourDBuserName -p -d my_own_db > file2consultant.sql
+
+-------------------------------------------------------------------
+
+-- verify `file2consultant.sql` by importing it into a database, structure_copy_db
+mysql -u yourDBuserName -p structure_copy_db < file2consultant.sql 
+
+-- to create the database `structure_copy_db` to use in the above command, run the following 
+mysql -u yourDBuserName -p -e "CREATE DATABASE structure_copy_db"
