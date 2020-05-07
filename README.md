@@ -8,8 +8,8 @@ This article shows how to copy your database structure without the data content 
 
 Before proceeding with the instructions, note the following names for ease of consistent reference throughout this text and the commands in the repository. Each of these names are placeholders for the actual names you’ll be using while running these commands for your case, with your own names: 
 
-* _`my_own_db`_: this is the database being looked at. It’s your original database – the one containing all your data, and the one you want to clone for its structure and NOT its data.
-* _`file2consultant.sql`_: this is the file your my_own_db will be cloned into in the end. When done by the instructions given here, _`file2consultant.sql`_ will contain all info about your database structure, and none of your data. Once generated, this is the file you’d be sending to your consultant in the above use-case.
+* _**`my_own_db`**_: this is the database being looked at. It’s your original database – the one containing all your data, and the one you want to clone for its structure and NOT its data.
+* _**`file2consultant.sql`**_: this is the file your my_own_db will be cloned into in the end. When done by the instructions given here, _`file2consultant.sql`_ will contain all info about your database structure, and none of your data. Once generated, this is the file you’d be sending to your consultant in the above use-case.
 
 
      The use of _`file2consultant.sql`_ as is saves this file to the disk directory you’re running the commands in. You can save this file to some other directory just by giving the full path to its location. 
