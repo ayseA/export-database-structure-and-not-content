@@ -1,3 +1,5 @@
+# How to Export Your Database Structure Without Data Content
+
 Often times, you want to copy your database for its structure and not data. A typical case is an outside consultant stepping into your systems and wants to look at your database as part of his/her work. The data content of your database, i.e. what’s sitting in the rows of your tables isn’t of any relevance here – your consultant hasn’t any interest in it, nor do you want your data unnecessarily exposed at this stage. 
 
 What you can do is to simply put at use a feature which all relational databases offer – copy your database structure. This can be termed as export, dump, backup, store, .. depending on the database&context you’re in. 
