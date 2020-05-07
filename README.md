@@ -4,7 +4,7 @@ Often times, you want to copy your database for its structure and not data. A ty
 
 What you can do is to simply put at use a feature which all relational databases offer – copy your database structure. This can be termed as export, dump, backup, store, .. depending on the database&context you’re in. 
 
-This article shows how to copy your database structure without the data content in MySQL as a sample case. At the time of this writing, the set of instructions to do this in MS SQL Server and PostgreSQL as well as MySQL are at [here](https://github.com/ayseA/export-database-structure-and-not-content). I’m planning on adding to this repository the corresponding instruction set for DB2 and probably some databases in the upcoming days.
+This article shows how to copy your database structure without the data content in MySQL as a sample case. At the time of this writing, the set of instructions to do this in MS SQL Server and PostgreSQL as well as MySQL are [here](https://github.com/ayseA/export-database-structure-and-not-content). I’m planning on adding to this repository the corresponding instruction set for DB2 and probably some databases in the upcoming days.
 
 Before proceeding with the instructions, note the following names for ease of consistent reference throughout this text and the commands in the repository. Each of these names are placeholders for the actual names you’ll be using while running these commands for your case, with your own names: 
 
@@ -91,4 +91,4 @@ In this article, we covered how to export a MySQL database into an external, ind
 
   
 
-The instructions shown here work for MySQL only. However, all relational database systems provide features to structure-copy a database just as we’ve done here. 	Keep an eye on [this](https://github.com/ayseA/export-database-structure-and-not-content) repository which currently contains the corresponding commands for  [MS SQL Server](https://github.com/ayseA/export-database-structure-and-not-content) and [PostgreSQL](https://github.com/ayseA/export-database-structure-and-not-content) also.
+The instructions shown here work for MySQL only. However, all relational database systems have features to structure-copy a database just as we’ve done here. 	Keep an eye on [this](https://github.com/ayseA/export-database-structure-and-not-content) repository which currently contains the corresponding commands for  [MS SQL Server](https://github.com/ayseA/export-database-structure-and-not-content/blob/master/SQL-Server) and [PostgreSQL]https://github.com/ayseA/export-database-structure-and-not-content/blob/master/psql) also.
