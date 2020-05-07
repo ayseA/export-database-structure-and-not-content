@@ -16,9 +16,9 @@ Before proceeding with the instructions, note the following names for ease of co
 
     **Eg:** To save your _`file2consultant.sql`_ at an existing directory “_D:\temp-dir_”, prepend it to your filename to give the full path in the commands – “_D:\temp-dir\file2consultant.sql_”. 
 
-* _`structure_copy_db`_: as its name implies, this name is the placeholder for the name of the database that ends up being the structure-copy of _`my_own_db`_. Unlike MS SQL Server, the import command of MySQL doesn’t create the database being imported to. So, you need to create this database yourself before running your import command. Once the import operation is successfully completed, you’ll see in _`structure_copy_db`_ all you see in _`my_own_db`_, except that all the tables are empty.
+* _**`structure_copy_db`**_: as its name implies, this name is the placeholder for the name of the database that ends up being the structure-copy of _`my_own_db`_. Unlike MS SQL Server, the import command of MySQL doesn’t create the database being imported to. So, you need to create this database yourself before running your import command. Once the import operation is successfully completed, you’ll see in _`structure_copy_db`_ all you see in _`my_own_db`_, except that all the tables are empty.
 
-* _`yourDBuserName`_: the username you use for accessing your database.
+* _**`yourDBuserName`**_: the username you use for accessing your database.
 
 # MySQL commands
 
