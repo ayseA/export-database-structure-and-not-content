@@ -2,9 +2,9 @@
 
 Often times, you want to copy your database for its structure and not data. A typical case is an outside consultant stepping into your systems and wants to look at your database as part of his/her work. The data content of your database, i.e. what’s sitting in the rows of your tables isn’t of any relevance here – your consultant hasn’t any interest in it, nor do you want your data unnecessarily exposed at this stage. 
 
-What you can do is to simply put at use a feature which all relational databases offer – copy your database structure. This can be termed as export, dump, backup, store, .. depending on the database&context you’re in. 
+What you can do is to simply put at use a feature which all relational database management systems offer – copy your database structure. This can be termed as export, dump, backup, store, .. depending on the database&context you’re in. 
 
-This article shows how to copy your database structure without the data content in MySQL as a sample case. At the time of this writing, the set of instructions to do this in MS SQL Server and PostgreSQL as well as MySQL are [here](https://github.com/ayseA/export-database-structure-and-not-content). I’m planning on adding to this repository the corresponding instructions for DB2 and probably some databases in the upcoming days.
+This article shows how to copy your database structure without the data content in MySQL as a sample case. At the time of this writing, the set of instructions to do this in MS SQL Server and PostgreSQL as well as MySQL are [here](https://github.com/ayseA/export-database-structure-and-not-content). I’m planning on adding to this repository the corresponding instructions for DB2 and probably some other databases in the upcoming days.
 
 Before proceeding with the instructions, note the following names for ease of consistent reference throughout this text and the commands in the repository. Each of these names are placeholders for the actual names you’ll be using while running these commands for your case, with your own names: 
 
